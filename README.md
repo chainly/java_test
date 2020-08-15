@@ -22,3 +22,9 @@ A: 1. add `try catch` to handle IOException
 2. or add `throws IOException` to let called to handle it
 
 ### print out
+
+### file io
+
+## system
+
+### path
