@@ -12,7 +12,9 @@ import java.io.FileWriter;
 public class MainTest{
 	public static void main(String[] args) throws IOException {
 		// in_and_out_test();
-		file_test();
+		// file_test();
+		PathTest pt = new PathTest();
+		pt.path_test();
 	}
 	
 	public static void in_and_out_test() throws IOException {
@@ -23,7 +25,7 @@ public class MainTest{
 		char c;
 		int n;
 		n = in.read(); // 97
-		c = (char) n; // a
+		c = (char) n; // 'a'
 		System.out.println(c);
 		System.out.println(n);
 		out.write(c);
@@ -42,6 +44,7 @@ public class MainTest{
 		byte[] buff = new byte[1];
 		fp.read(buff);
 		fp.close();
-		System.out.print(buff[0]);
+		System.out.print(buff[0]); // 97
 	}
+	
 }
